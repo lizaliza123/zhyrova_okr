@@ -94,3 +94,48 @@ table.products a {
 body.products .paragraph > .product-img {
     margin-bottom: 20px;
 }
+/* Стилі для блоків */
+.product-block {
+    margin-bottom: 20px;
+}
+
+/* Стилі для зображень */
+.product-block img {
+    float: left; /* Плаваюче розташування ліворуч */
+    margin-right: 10px;
+}
+
+/* Стилі для інформаційного блоку */
+.product-info {
+    overflow: hidden; /* Запобігти перекриттю зображення */
+}
+/* Стилі для посилань */
+a {
+    color: inherit !important; /* За замовчуванням інколірні посилання */
+    text-decoration: none !important; /* Видалити підкреслення */
+    font-weight: bold !important; /* Зробити жирним */
+}
+
+/* Стилі для псевдокласів посилань */
+a:link {
+    color: green;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: red;
+}
+
+/* Стилі для псевдоелементу :before */
+.product-info:before {
+    content: "Продукт: "; /* Додати текст перед блоком product-info */
+    font-weight: bold;
+}
+
