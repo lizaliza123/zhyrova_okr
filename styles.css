@@ -67,3 +67,30 @@ ul, ol, dl {
     width: 300px;
     height: 200px;
 }
+/* Контекстні селектори */
+
+/* Стилі заголовка "Продукти" в контексті body */
+body.products .HN {
+    font-size: 28px !important;
+    color: #007bff !important; /* Синій колір */
+}
+
+/* Стилі абзацу "Тут ви можете ознайомитися з продуктами" в контексті body */
+body.products .paragraph {
+    font-style: italic;
+}
+
+/* Сусідні селектори */
+
+/* Стилі гіперпосилань в таблиці, які знаходяться поруч з картинками */
+table.products a {
+    font-weight: normal !important;
+    color: #28a745 !important; /* Зелений колір */
+}
+
+/* Дочірні селектори */
+
+/* Стилі картинок, які є дочірніми елементами абзацу "Тут ви можете ознайомитися з продуктами" */
+body.products .paragraph > .product-img {
+    margin-bottom: 20px;
+}
